@@ -1,0 +1,13 @@
+import pickle
+import pandas as pd
+
+# Load the saved model
+with open("ensemble_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+# Example new food item (replace with actual values)
+new_food = pd.DataFrame([[10.2, 5.1, 2.3]], columns=["Proteínas [g]", "Hidratos de carbono [g]", "Lípidos [g]"])
+
+# Predict category
+predicted_category = model.predict(new_food)
+print("Predicted Food Category:", predicted_category)
