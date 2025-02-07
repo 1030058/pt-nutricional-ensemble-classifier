@@ -32,3 +32,17 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+# Dockerfile for containerization
+"""
+FROM python:3.8-slim
+
+WORKDIR /app
+
+COPY ensemble_model.pkl /app/
+COPY pt_nutricional_classifier_api.py /app/
+
+RUN pip install flask pandas scikit-learn
+
+CMD ["python", "pt_nutricional_classifier_api.py"]
+"""
