@@ -8,6 +8,7 @@ python pt_nutricional_classifier_api.py
 Send a POST request with food nutrition data:
 
 curl -X POST "http://localhost:5000/predict" -H "Content-Type: application/json" -d '{"Proteínas [g]": 10.2, "Hidratos de carbono [g]": 5.1, "Lípidos [g]": 2.3}'
+
 Response Format:
 json
 
