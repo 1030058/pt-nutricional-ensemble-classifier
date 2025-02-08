@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-st.title('Food Classification App')
+st.title('Portuguese Nutricional Ensemble Classifier App')
 
 carbs = st.number_input('Carbohydrates [g]', 0.0, 100.0, 10.0)
 fiber = st.number_input('Fiber [g]', 0.0, 50.0, 5.0)
