@@ -16,37 +16,14 @@ It utilizes an **ensemble approach** combining **Random Forest, Neural Network, 
 
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/Portuguese-Nutritional-Ensemble-Classifier.git
-cd Portuguese-Nutritional-Ensemble-Classifier
+git clone https://github.com/1030058/pt-nutricional-ensemble-classifier.git
+cd pt-nutricional-ensemble-classifier
 ```
-
-### 2️⃣ **Create a Virtual Environment** (Recommended)
-- **For macOS/Linux**:
-  ```bash
-  python3 -m venv env
-  source env/bin/activate
-  ```
-- **For Windows**:
-  ```bash
-  python -m venv env
-  env\Scripts\activate
-  ```
-
-### 3️⃣ **Install Required Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ **Train the Model & Save It**
-```bash
-python train_model.py
-```
-This will **train the model** and save the files:
 - `food_classifier_model.pkl` (trained model)
 - `scaler.pkl` (data preprocessor)
 - `label_encoder.pkl` (category encoder)
 
-### 5️⃣ **Run the Web App**
+### 2️⃣ **Run the Web App**
 - **Start FastAPI Backend**:
   ```bash
   uvicorn api:app --reload
@@ -56,7 +33,7 @@ This will **train the model** and save the files:
   streamlit run app.py
   ```
 
-### 6️⃣ **Automate Batch Predictions**
+### 3️⃣ **Automate Batch Predictions**
 ```bash
 python automate_predictions.py
 ```
@@ -119,19 +96,13 @@ Response:
 
 ## 🏆 Credits
 
-Developed by **[Your Name]** 🚀  
+Developed by **[1030058]** 🚀  
 For research and **nutritional data classification** in Portugal.  
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
 
 ## 🌎 Connect with Me
 
-🔗 [LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN)  
-🐙 [GitHub](https://github.com/YOUR_GITHUB_USERNAME)  
-✉️ Email: your_email@example.com  
+🐙 [GitHub](https://github.com/1030058)  
+
